@@ -1,0 +1,17 @@
+{
+  "locations":
+    [
+      {
+        "city": "Omaha, NE",
+        "bldg": "Bldg-1",
+        "address": "101 S 10th St, Omaha, NE 68102",
+        "latitude": 41.2592302,
+        "longitude": -95.9306994,
+        "floors": [1, 2],
+        "rfModel": "Cubes and Walled Offices",
+        "width": 200,
+        "length": 50,
+        "heigth": 12
+      }
+    ]
+}

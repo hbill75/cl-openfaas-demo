@@ -1,0 +1,17 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:31112
+functions:
+  dnac-auth:
+    lang: python3
+    handler: ./dnac-auth
+    image: shill75/dnac-auth:latest
+  dnac-site-build:
+    lang: python3
+    handler: ./dnac-site-build
+    image: shill75/dnac-site-build:latest
+  validate-build-step:
+    lang: python3
+    handler: ./validate-build-step
+    image: shill75/validate-build-step:latest

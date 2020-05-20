@@ -1,0 +1,29 @@
+{
+  "locations":
+    [
+      {
+        "city": "Des Moines, IA",
+        "bldg": "Buliding-1",
+        "address": "435 Park St, Des Moines, IA 50309",
+        "latitude": 41.598840,
+        "longitude": -93.623157,
+        "floors": [4, 5],
+        "rfModel": "Cubes and Walled Offices",
+        "width": 150,
+        "length": 10,
+        "heigth": 12
+      },
+      {
+        "city": "Kansas City, MO",
+        "bldg": "Building-1",
+        "address": "1329 Baltimore Ave, Kansas City, MO 64105",
+        "latitude": 39.112777,
+        "longitude": -94.583461,
+        "floors": [1, 2, 3],
+        "rfModel": "Cubes and Walled Offices",
+        "width": 150,
+        "length": 100,
+        "heigth": 12
+      }
+    ]
+}
