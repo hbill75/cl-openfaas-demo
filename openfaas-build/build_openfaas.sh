@@ -16,14 +16,14 @@ kubectl -n openfaas create secret generic basic-auth \
 --from-literal=basic-auth-user=admin \
 --from-literal=basic-auth-password=C1sco12345 &&
 sleep 5
-USERNAME=$(kubectl -n openfaas get secret basic-auth -o jsonpath="{.data.basic-auth-user}" | base64 --decode)
-PASSWORD=$(kubectl -n openfaas get secret basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode)
+FAAS_USERNAME=$(kubectl -n openfaas get secret basic-auth -o jsonpath="{.data.basic-auth-user}" | base64 --decode)
+FAAS_PASSWORD=$(kubectl -n openfaas get secret basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode)
 
 # Display openfaas username & password
 echo " "
 echo -e "\e[32mDisplay OpenFaaS Username & Password\e[0m\n"
-echo "OpenFaaS Username: $USERNAME"
-echo "OpenFaaS Password: $PASSWORD"
+echo "OpenFaaS Username: $FAAS_USERNAME"
+echo "OpenFaaS Password: $FAAS_PASSWORD"
 sleep 5
 
 # add the openfaas helm repository
