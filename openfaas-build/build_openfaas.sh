@@ -62,3 +62,8 @@ sleep 6
 
 # Display status of openfaas services
 kubectl -n openfaas get deployments -l "release=openfaas, app=openfaas"
+
+# OpenFaaS CLI login
+echo " "
+echo -e "\e[32mLogin to OpenFaaS...\e[0m\n"
+echo -n $FAAS_PASSWORD | faas-cli login --password-stdin
